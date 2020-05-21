@@ -3,7 +3,7 @@ a dash board for the home built using flask
 
 ## Setup
 
-Python version: `3.8.*`
+Requires python version: `3.8.*`
 
 Setup a virtualenv and install requirements
 ```bash
@@ -16,9 +16,15 @@ pip install -r requirements.txt
 pre-commit install
 ```
 
+Then to run the server locally:
+
+```bash
+python main.py
+```
+
 ## Formatting
 
-[Black](https://black.readthedocs.io/en/stable/) is used as an autoformatter. If pre-commit is installed properly this 
+[Black](https://black.readthedocs.io/en/stable/) is used as an autoformatter. If pre-commit is installed this will format on `git commit`
 
 ## Testing
 
@@ -38,8 +44,4 @@ pytest tests/test_apples.py::test_apples_taste_good
 ```
 
 ## Contributing
-TODO
-- PR
-- CI pipeline
-  - failures and stuff
-  - flake, black, tests
+Branch off the master branch. Create a PR and make sure all CI (continuous integration) stages pass. CI is used for running tests, linting and formatting.
