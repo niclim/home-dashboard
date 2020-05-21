@@ -22,9 +22,18 @@ Then to run the server locally:
 python main.py
 ```
 
-## Formatting
+## Formatting and linting
 
-[Black](https://black.readthedocs.io/en/stable/) is used as an autoformatter. If pre-commit is installed this will format on `git commit`
+[Black](https://black.readthedocs.io/en/stable/) and [flake 8](https://flake8.pycqa.org/en/latest/) is used for linting and formatting. If pre-commit is installed this will black will format on `git commit`
+
+To run these on the command line:
+```bash
+# linting
+flake8 .
+
+# formatting
+black . --exclude .venv
+```
 
 ## Testing
 
