@@ -1,7 +1,3 @@
-from flask import Flask
+from home_dashboard.app_init import create_app
 
-
-def create_app(is_testing=False):
-    app = Flask(__name__)
-
-    return app
+app = create_app()
