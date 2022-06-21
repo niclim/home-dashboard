@@ -13,7 +13,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 
 # install precommit hooks
-pre-commit install
+pre-commit installasdsdfsdfsdfsdfdsf
 ```
 
 Then to run the server locally:
